@@ -5,7 +5,7 @@ import NavData from "./NavData";
 import "./Navbar.css";
 
 const Navbar = () => {
-    const [click, setClick] = useState(false);
+    const [click, setClick] = useState(true);
 
     const handleClick = () => setClick(!click);
 

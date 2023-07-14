@@ -6,8 +6,9 @@
     padding: 0 30px;
     color: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-    width: 100%;
+    width: 95%;
     height: 80px;
+    border-radius: 13px;
     position: fixed;
 }
 
@@ -20,7 +21,7 @@
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(6, auto);
-    grid-gap: 12px;
+    grid-gap: 10px;
     list-style: none;
     align-items: center;
     text-align: center;
@@ -47,12 +48,47 @@
 
 .menu-icons {
     display: none;
-    cursor: pointer;
-    font-size: 2rem;
-    color: #fff;
-    transition: all 0.2s ease-in-out;
 }
 
-@media screen and (max-) {
-    
+@media screen and (max-width: 850px) {
+    .NavbarItems {
+        z-index: 99;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: rgba(255, 255, 255, .25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+        width: 100%;
+        height: auto;
+        backdrop-filter: blur(4px);
+        border-radius: 13px;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        align-items:stretch;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        z-index: -1;
+    }
+
+    .nav-links {
+        display: block;
+        widows: 100%;
+        padding: 2rem 0;
+        color: black;
+        background-color: white;
+    }
+
+    .nav-links:hover {
+        background-color: #fff;
+        backdrop-filter: blur(20px);
+    }
+
+    .menu-icons {
+        display: block;
+
+    }
 }
